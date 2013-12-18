@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/phatblat/Fetchable.git',
                         # :branch  => 'master'
                         # :tag => "#{spec.version}"
-                        :commit => '218deadbb8bcaafd4f0f9d284d687020b392c44f'
+                        :commit => 'fdaf35f17fd279397d1ae5a79db76afc8c841797'
                       }
 
   spec.source_files = 'Fetchable/**/*.{h,m}'
