@@ -10,10 +10,6 @@
 		F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
 		F89DC47818616BF400FEB151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47718616BF400FEB151 /* CoreGraphics.framework */; };
 		F89DC47A18616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
-		F89DC48018616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC47E18616BF400FEB151 /* InfoPlist.strings */; };
-		F89DC48218616BF400FEB151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC48118616BF400FEB151 /* main.m */; };
-		F89DC48618616BF400FEB151 /* FBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC48518616BF400FEB151 /* FBLAppDelegate.m */; };
-		F89DC48818616BF400FEB151 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89DC48718616BF400FEB151 /* Images.xcassets */; };
 		F89DC48F18616BF400FEB151 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC48E18616BF400FEB151 /* XCTest.framework */; };
 		F89DC49018616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
 		F89DC49118616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
@@ -36,13 +32,8 @@
 		F89DC47518616BF400FEB151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F89DC47718616BF400FEB151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F89DC47918616BF400FEB151 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fetchable-Info.plist"; sourceTree = "<group>"; };
-		F89DC47F18616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F89DC48118616BF400FEB151 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fetchable-Prefix.pch"; sourceTree = "<group>"; };
-		F89DC48418616BF400FEB151 /* FBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLAppDelegate.h; sourceTree = "<group>"; };
-		F89DC48518616BF400FEB151 /* FBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLAppDelegate.m; sourceTree = "<group>"; };
-		F89DC48718616BF400FEB151 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "Fetchable-Info.plist"; path = "Support/Fetchable-Info.plist"; sourceTree = "<group>"; };
+		F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Fetchable-Prefix.pch"; path = "Support/Fetchable-Prefix.pch"; sourceTree = "<group>"; };
 		F89DC48D18616BF400FEB151 /* FetchableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89DC48E18616BF400FEB151 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableTests-Info.plist"; sourceTree = "<group>"; };
@@ -78,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F89DC47B18616BF400FEB151 /* Fetchable */,
-				F89DC49418616BF400FEB151 /* FetchableTests */,
+				F89DC49418616BF400FEB151 /* Tests */,
 				F89DC47418616BF400FEB151 /* Frameworks */,
 				F89DC47318616BF400FEB151 /* Products */,
 			);
@@ -107,32 +98,27 @@
 		F89DC47B18616BF400FEB151 /* Fetchable */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC48418616BF400FEB151 /* FBLAppDelegate.h */,
-				F89DC48518616BF400FEB151 /* FBLAppDelegate.m */,
-				F89DC48718616BF400FEB151 /* Images.xcassets */,
-				F89DC47C18616BF400FEB151 /* Supporting Files */,
+				F89DC47C18616BF400FEB151 /* Support */,
 			);
 			path = Fetchable;
 			sourceTree = "<group>";
 		};
-		F89DC47C18616BF400FEB151 /* Supporting Files */ = {
+		F89DC47C18616BF400FEB151 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */,
-				F89DC47E18616BF400FEB151 /* InfoPlist.strings */,
-				F89DC48118616BF400FEB151 /* main.m */,
 				F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = Support;
 			sourceTree = "<group>";
 		};
-		F89DC49418616BF400FEB151 /* FetchableTests */ = {
+		F89DC49418616BF400FEB151 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				F89DC49A18616BF400FEB151 /* FetchableTests.m */,
 				F89DC49518616BF400FEB151 /* Supporting Files */,
 			);
-			path = FetchableTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F89DC49518616BF400FEB151 /* Supporting Files */ = {
@@ -219,8 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89DC48018616BF400FEB151 /* InfoPlist.strings in Resources */,
-				F89DC48818616BF400FEB151 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89DC48218616BF400FEB151 /* main.m in Sources */,
-				F89DC48618616BF400FEB151 /* FBLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,14 +245,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F89DC47E18616BF400FEB151 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F89DC47F18616BF400FEB151 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		F89DC49718616BF400FEB151 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,8 +336,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Fetchable-Info.plist";
+				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Support/Fetchable-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,8 +349,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Fetchable-Info.plist";
+				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Support/Fetchable-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,12 +367,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
+				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FetchableTests/FetchableTests-Info.plist";
+				INFOPLIST_FILE = "Project Files/Tests/FetchableTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -416,8 +390,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "FetchableTests/FetchableTests-Info.plist";
+				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Project Files/Tests/FetchableTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -443,6 +417,7 @@
 				F89DC4A018616BF400FEB151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +426,7 @@
 				F89DC4A318616BF400FEB151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
