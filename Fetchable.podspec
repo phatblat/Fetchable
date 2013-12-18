@@ -17,25 +17,9 @@ Pod::Spec.new do |spec|
                         :commit => '218deadbb8bcaafd4f0f9d284d687020b392c44f'
                       }
 
-  # spec.source_files  = 'Classes', 'Classes/**/*.{h,m}'
-  # spec.exclude_files = 'Classes/Exclude'
-
-  # spec.public_header_files = 'Classes/**/*.h'
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-  # spec.framework  = 'SomeFramework'
-  # spec.frameworks = 'SomeFramework', 'AnotherFramework'
-
-  # spec.library   = 'iconv'
-  # spec.libraries = 'iconv', 'xml2'
-
+  spec.source_files = 'Fetchable/**/*.{h,m}'
+  spec.framework    = 'CoreData'
   spec.requires_arc = true
 
-  # spec.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   spec.dependency 'MagicalRecord', '~> 2.2'
-
 end
