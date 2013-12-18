@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
+		F89DC47818616BF400FEB151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47718616BF400FEB151 /* CoreGraphics.framework */; };
+		F89DC47A18616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
+		F89DC48018616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC47E18616BF400FEB151 /* InfoPlist.strings */; };
+		F89DC48218616BF400FEB151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC48118616BF400FEB151 /* main.m */; };
+		F89DC48618616BF400FEB151 /* FBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC48518616BF400FEB151 /* FBLAppDelegate.m */; };
+		F89DC48818616BF400FEB151 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89DC48718616BF400FEB151 /* Images.xcassets */; };
+		F89DC48F18616BF400FEB151 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC48E18616BF400FEB151 /* XCTest.framework */; };
+		F89DC49018616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
+		F89DC49118616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
+		F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC49718616BF400FEB151 /* InfoPlist.strings */; };
+		F89DC49B18616BF400FEB151 /* FetchableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC49A18616BF400FEB151 /* FetchableTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F89DC49218616BF400FEB151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89DC46A18616BF400FEB151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F89DC47118616BF400FEB151;
+			remoteInfo = Fetchable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F89DC47218616BF400FEB151 /* Fetchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89DC47518616BF400FEB151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F89DC47718616BF400FEB151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F89DC47918616BF400FEB151 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fetchable-Info.plist"; sourceTree = "<group>"; };
+		F89DC47F18616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F89DC48118616BF400FEB151 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fetchable-Prefix.pch"; sourceTree = "<group>"; };
+		F89DC48418616BF400FEB151 /* FBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLAppDelegate.h; sourceTree = "<group>"; };
+		F89DC48518616BF400FEB151 /* FBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLAppDelegate.m; sourceTree = "<group>"; };
+		F89DC48718616BF400FEB151 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F89DC48D18616BF400FEB151 /* FetchableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89DC48E18616BF400FEB151 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableTests-Info.plist"; sourceTree = "<group>"; };
+		F89DC49818616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F89DC49A18616BF400FEB151 /* FetchableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchableTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F89DC46F18616BF400FEB151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC47818616BF400FEB151 /* CoreGraphics.framework in Frameworks */,
+				F89DC47A18616BF400FEB151 /* UIKit.framework in Frameworks */,
+				F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89DC48A18616BF400FEB151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC48F18616BF400FEB151 /* XCTest.framework in Frameworks */,
+				F89DC49118616BF400FEB151 /* UIKit.framework in Frameworks */,
+				F89DC49018616BF400FEB151 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F89DC46918616BF400FEB151 = {
+			isa = PBXGroup;
+			children = (
+				F89DC47B18616BF400FEB151 /* Fetchable */,
+				F89DC49418616BF400FEB151 /* FetchableTests */,
+				F89DC47418616BF400FEB151 /* Frameworks */,
+				F89DC47318616BF400FEB151 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F89DC47318616BF400FEB151 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC47218616BF400FEB151 /* Fetchable.app */,
+				F89DC48D18616BF400FEB151 /* FetchableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89DC47418616BF400FEB151 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC47518616BF400FEB151 /* Foundation.framework */,
+				F89DC47718616BF400FEB151 /* CoreGraphics.framework */,
+				F89DC47918616BF400FEB151 /* UIKit.framework */,
+				F89DC48E18616BF400FEB151 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F89DC47B18616BF400FEB151 /* Fetchable */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC48418616BF400FEB151 /* FBLAppDelegate.h */,
+				F89DC48518616BF400FEB151 /* FBLAppDelegate.m */,
+				F89DC48718616BF400FEB151 /* Images.xcassets */,
+				F89DC47C18616BF400FEB151 /* Supporting Files */,
+			);
+			path = Fetchable;
+			sourceTree = "<group>";
+		};
+		F89DC47C18616BF400FEB151 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */,
+				F89DC47E18616BF400FEB151 /* InfoPlist.strings */,
+				F89DC48118616BF400FEB151 /* main.m */,
+				F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F89DC49418616BF400FEB151 /* FetchableTests */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC49A18616BF400FEB151 /* FetchableTests.m */,
+				F89DC49518616BF400FEB151 /* Supporting Files */,
+			);
+			path = FetchableTests;
+			sourceTree = "<group>";
+		};
+		F89DC49518616BF400FEB151 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */,
+				F89DC49718616BF400FEB151 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F89DC47118616BF400FEB151 /* Fetchable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "Fetchable" */;
+			buildPhases = (
+				F89DC46E18616BF400FEB151 /* Sources */,
+				F89DC46F18616BF400FEB151 /* Frameworks */,
+				F89DC47018616BF400FEB151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fetchable;
+			productName = Fetchable;
+			productReference = F89DC47218616BF400FEB151 /* Fetchable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F89DC48C18616BF400FEB151 /* FetchableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableTests" */;
+			buildPhases = (
+				F89DC48918616BF400FEB151 /* Sources */,
+				F89DC48A18616BF400FEB151 /* Frameworks */,
+				F89DC48B18616BF400FEB151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F89DC49318616BF400FEB151 /* PBXTargetDependency */,
+			);
+			name = FetchableTests;
+			productName = FetchableTests;
+			productReference = F89DC48D18616BF400FEB151 /* FetchableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F89DC46A18616BF400FEB151 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FBL;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					F89DC48C18616BF400FEB151 = {
+						TestTargetID = F89DC47118616BF400FEB151;
+					};
+				};
+			};
+			buildConfigurationList = F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "Fetchable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F89DC46918616BF400FEB151;
+			productRefGroup = F89DC47318616BF400FEB151 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F89DC47118616BF400FEB151 /* Fetchable */,
+				F89DC48C18616BF400FEB151 /* FetchableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F89DC47018616BF400FEB151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC48018616BF400FEB151 /* InfoPlist.strings in Resources */,
+				F89DC48818616BF400FEB151 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89DC48B18616BF400FEB151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F89DC46E18616BF400FEB151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC48218616BF400FEB151 /* main.m in Sources */,
+				F89DC48618616BF400FEB151 /* FBLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89DC48918616BF400FEB151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DC49B18616BF400FEB151 /* FetchableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F89DC49318616BF400FEB151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F89DC47118616BF400FEB151 /* Fetchable */;
+			targetProxy = F89DC49218616BF400FEB151 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F89DC47E18616BF400FEB151 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F89DC47F18616BF400FEB151 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F89DC49718616BF400FEB151 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F89DC49818616BF400FEB151 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F89DC49C18616BF400FEB151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F89DC49D18616BF400FEB151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F89DC49F18616BF400FEB151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Fetchable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F89DC4A018616BF400FEB151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Fetchable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F89DC4A218616BF400FEB151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fetchable.app/Fetchable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FetchableTests/FetchableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F89DC4A318616BF400FEB151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fetchable.app/Fetchable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fetchable/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "FetchableTests/FetchableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "Fetchable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89DC49C18616BF400FEB151 /* Debug */,
+				F89DC49D18616BF400FEB151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "Fetchable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89DC49F18616BF400FEB151 /* Debug */,
+				F89DC4A018616BF400FEB151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89DC4A218616BF400FEB151 /* Debug */,
+				F89DC4A318616BF400FEB151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F89DC46A18616BF400FEB151 /* Project object */;
+}
