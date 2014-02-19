@@ -11,9 +11,25 @@
 
 @interface FBLFetchedResultsTableViewController ()
 
+@property (assign, getter = isVisible, nonatomic) BOOL visible;
+
 @end
 
 @implementation FBLFetchedResultsTableViewController
+
+#pragma mark - UIViewController
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.visible = YES;
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    self.visible = NO;
+    [super viewDidDisappear:animated];
+}
 
 #pragma mark - Accessor Methods
 
@@ -30,12 +46,18 @@
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
-    [self.tableView beginUpdates];
+    if (self.isVisible) {
+        [self.tableView beginUpdates];
+    }
 }
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
            atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
 {
+    if (!self.isVisible) {
+        return;
+    }
+
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex]
@@ -53,6 +75,10 @@
        atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
       newIndexPath:(NSIndexPath *)newIndexPath
 {
+    if (!self.isVisible) {
+        return;
+    }
+
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
