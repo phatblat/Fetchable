@@ -46,4 +46,11 @@ typedef void (^ConfigureCellBlock)(UICollectionViewCell *, id);
  */
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
+/**
+ Handy method for looking up the indexpath for a given item.
+ @param item The item to look for
+ @return the NSIndexPath of the given item if found; nil if not found
+ */
+- (NSIndexPath *)indexPathForItem:(id)item;
+
 @end

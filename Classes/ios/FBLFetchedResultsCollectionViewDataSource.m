@@ -55,4 +55,9 @@
     return [[[[self.frc sections] objectAtIndex:indexPath.section] objects] objectAtIndex:indexPath.row];
 }
 
+- (NSIndexPath *)indexPathForItem:(id)item
+{
+    return [self.frc indexPathForObject:item];
+}
+
 @end
