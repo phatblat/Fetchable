@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
                         :commit => 'fdaf35f17fd279397d1ae5a79db76afc8c841797'
                       }
 
-  spec.source_files = 'Fetchable/**/*.{h,m}'
+  spec.source_files = 'Classes/**/*.{h,m}'
   spec.framework    = 'CoreData'
   spec.requires_arc = true
 
