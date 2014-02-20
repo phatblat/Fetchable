@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F8B7C67D18B5CA1C00A9365E /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F8B7C67E18B5CA1D00A9365E /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				F8B7C68118B5CA3600A9365E /* Mogenerator */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A2EDC3F5B1C14CD69931516E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4045EEC386B4438798502151 /* libPods.a */; };
 		F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
@@ -17,6 +31,7 @@
 		F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC49718616BF400FEB151 /* InfoPlist.strings */; };
 		F8B7C67218B5C71600A9365E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B7C67118B5C71600A9365E /* Images.xcassets */; };
 		F8B7C67618B5C82800A9365E /* FBLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C67518B5C82800A9365E /* FBLTableViewController.m */; };
+		F8B7C68718B5CB8900A9365E /* Fetchable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C68518B5CB8900A9365E /* Fetchable.xcdatamodeld */; };
 		F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEB18B5C31E006CF7A8 /* main.m */; };
 		F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */; };
 		F8C5CCF218B5C5DC006CF7A8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C5CCF118B5C5DC006CF7A8 /* Main_iPhone.storyboard */; };
@@ -48,6 +63,8 @@
 		F8B7C67118B5C71600A9365E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8B7C67418B5C82800A9365E /* FBLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLTableViewController.h; sourceTree = "<group>"; };
 		F8B7C67518B5C82800A9365E /* FBLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLTableViewController.m; sourceTree = "<group>"; };
+		F8B7C67818B5C94600A9365E /* mogenerator.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = "<group>"; };
+		F8B7C68618B5CB8900A9365E /* Fetchable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fetchable.xcdatamodel; sourceTree = "<group>"; };
 		F8C5CCEB18B5C31E006CF7A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +134,7 @@
 				F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */,
 				F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */,
 				F8B7C67318B5C7EC00A9365E /* Classes */,
+				F8B7C68218B5CB4800A9365E /* Model */,
 				F8C5CCF018B5C5B5006CF7A8 /* Resources */,
 				F89DC47C18616BF400FEB151 /* Support */,
 			);
@@ -129,6 +147,7 @@
 				F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */,
 				F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */,
 				F8C5CCEB18B5C31E006CF7A8 /* main.m */,
+				F8B7C67718B5C92700A9365E /* Scripts */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -157,6 +176,38 @@
 				F8B7C67518B5C82800A9365E /* FBLTableViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8B7C67718B5C92700A9365E /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7C67818B5C94600A9365E /* mogenerator.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		F8B7C68218B5CB4800A9365E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7C68518B5CB8900A9365E /* Fetchable.xcdatamodeld */,
+				F8B7C68318B5CB4C00A9365E /* Managed Objects */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8B7C68318B5CB4C00A9365E /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7C68418B5CB5400A9365E /* _Generated */,
+			);
+			path = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		F8B7C68418B5CB5400A9365E /* _Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Generated;
 			sourceTree = "<group>";
 		};
 		F8C5CCF018B5C5B5006CF7A8 /* Resources */ = {
@@ -236,6 +287,7 @@
 			targets = (
 				F89DC47118616BF400FEB151 /* Fetchable */,
 				F89DC48C18616BF400FEB151 /* FetchableTests */,
+				F8B7C67D18B5CA1C00A9365E /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +343,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F8B7C68118B5CA3600A9365E /* Mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Mogenerator;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Fetchable/Support/Scripts/mogenerator.sh\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,6 +367,7 @@
 				F8B7C67618B5C82800A9365E /* FBLTableViewController.m in Sources */,
 				F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */,
 				F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */,
+				F8B7C68718B5CB8900A9365E /* Fetchable.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +544,20 @@
 			};
 			name = Release;
 		};
+		F8B7C67F18B5CA1D00A9365E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8B7C68018B5CA1D00A9365E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,7 +588,28 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F8B7C67E18B5CA1D00A9365E /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B7C67F18B5CA1D00A9365E /* Debug */,
+				F8B7C68018B5CA1D00A9365E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8B7C68518B5CB8900A9365E /* Fetchable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8B7C68618B5CB8900A9365E /* Fetchable.xcdatamodel */,
+			);
+			currentVersion = F8B7C68618B5CB8900A9365E /* Fetchable.xcdatamodel */;
+			path = Fetchable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F89DC46A18616BF400FEB151 /* Project object */;
 }
