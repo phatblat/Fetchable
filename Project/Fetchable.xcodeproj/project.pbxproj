@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A2EDC3F5B1C14CD69931516E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4045EEC386B4438798502151 /* libPods.a */; };
-		F84F72C9188507FC004E678D /* FBLFetchedResultsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84F72C2188507FC004E678D /* FBLFetchedResultsCollectionViewController.m */; };
-		F84F72CA188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F84F72C4188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.m */; };
-		F84F72CB188507FC004E678D /* FBLFetchedResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84F72C6188507FC004E678D /* FBLFetchedResultsTableViewController.m */; };
-		F84F72CC188507FC004E678D /* FBLFetchedResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F84F72C8188507FC004E678D /* FBLFetchedResultsTableViewDataSource.m */; };
 		F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
 		F89DC47818616BF400FEB151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47718616BF400FEB151 /* CoreGraphics.framework */; };
 		F89DC47A18616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
@@ -19,7 +15,8 @@
 		F89DC49018616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
 		F89DC49118616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
 		F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC49718616BF400FEB151 /* InfoPlist.strings */; };
-		F89DC49B18616BF400FEB151 /* FetchableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F89DC49A18616BF400FEB151 /* FetchableTests.m */; };
+		F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEB18B5C31E006CF7A8 /* main.m */; };
+		F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +32,6 @@
 /* Begin PBXFileReference section */
 		4045EEC386B4438798502151 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BFC14ED0004481817FF319 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F84F72C1188507FC004E678D /* FBLFetchedResultsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLFetchedResultsCollectionViewController.h; sourceTree = "<group>"; };
-		F84F72C2188507FC004E678D /* FBLFetchedResultsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLFetchedResultsCollectionViewController.m; sourceTree = "<group>"; };
-		F84F72C3188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLFetchedResultsCollectionViewDataSource.h; sourceTree = "<group>"; };
-		F84F72C4188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLFetchedResultsCollectionViewDataSource.m; sourceTree = "<group>"; };
-		F84F72C5188507FC004E678D /* FBLFetchedResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLFetchedResultsTableViewController.h; sourceTree = "<group>"; };
-		F84F72C6188507FC004E678D /* FBLFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLFetchedResultsTableViewController.m; sourceTree = "<group>"; };
-		F84F72C7188507FC004E678D /* FBLFetchedResultsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLFetchedResultsTableViewDataSource.h; sourceTree = "<group>"; };
-		F84F72C8188507FC004E678D /* FBLFetchedResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLFetchedResultsTableViewDataSource.m; sourceTree = "<group>"; };
 		F89DC47218616BF400FEB151 /* Fetchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89DC47518616BF400FEB151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F89DC47718616BF400FEB151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,7 +42,9 @@
 		F89DC48E18616BF400FEB151 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableTests-Info.plist"; sourceTree = "<group>"; };
 		F89DC49818616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F89DC49A18616BF400FEB151 /* FetchableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchableTests.m; sourceTree = "<group>"; };
+		F8C5CCEB18B5C31E006CF7A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,29 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F84F72C0188507FC004E678D /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				F84F72C1188507FC004E678D /* FBLFetchedResultsCollectionViewController.h */,
-				F84F72C2188507FC004E678D /* FBLFetchedResultsCollectionViewController.m */,
-				F84F72C3188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.h */,
-				F84F72C4188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.m */,
-				F84F72C5188507FC004E678D /* FBLFetchedResultsTableViewController.h */,
-				F84F72C6188507FC004E678D /* FBLFetchedResultsTableViewController.m */,
-				F84F72C7188507FC004E678D /* FBLFetchedResultsTableViewDataSource.h */,
-				F84F72C8188507FC004E678D /* FBLFetchedResultsTableViewDataSource.m */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		F84F72CD18850995004E678D /* Project */ = {
-			isa = PBXGroup;
-			children = (
-				F89DC47C18616BF400FEB151 /* Support */,
-			);
-			path = Project;
-			sourceTree = "<group>";
-		};
 		F89DC46918616BF400FEB151 = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +107,11 @@
 		F89DC47B18616BF400FEB151 /* Fetchable */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC4DC186172C100FEB151 /* Classes */,
-				F84F72CD18850995004E678D /* Project */,
+				F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */,
+				F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */,
+				F89DC47C18616BF400FEB151 /* Support */,
 			);
-			name = Fetchable;
-			path = ..;
+			path = Fetchable;
 			sourceTree = "<group>";
 		};
 		F89DC47C18616BF400FEB151 /* Support */ = {
@@ -151,6 +119,7 @@
 			children = (
 				F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */,
 				F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */,
+				F8C5CCEB18B5C31E006CF7A8 /* main.m */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -158,7 +127,6 @@
 		F89DC49418616BF400FEB151 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC49A18616BF400FEB151 /* FetchableTests.m */,
 				F89DC49518616BF400FEB151 /* Supporting Files */,
 			);
 			path = Tests;
@@ -171,14 +139,6 @@
 				F89DC49718616BF400FEB151 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F89DC4DC186172C100FEB151 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F84F72C0188507FC004E678D /* ios */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F84F72CC188507FC004E678D /* FBLFetchedResultsTableViewDataSource.m in Sources */,
-				F84F72CB188507FC004E678D /* FBLFetchedResultsTableViewController.m in Sources */,
-				F84F72C9188507FC004E678D /* FBLFetchedResultsCollectionViewController.m in Sources */,
-				F84F72CA188507FC004E678D /* FBLFetchedResultsCollectionViewDataSource.m in Sources */,
+				F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */,
+				F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89DC49B18616BF400FEB151 /* FetchableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +384,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Support/Fetchable-Info.plist";
+				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Support/Fetchable-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -441,8 +398,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Support/Fetchable-Info.plist";
+				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Support/Fetchable-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -459,12 +416,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
+				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Project Files/Tests/FetchableTests-Info.plist";
+				INFOPLIST_FILE = "Tests/FetchableTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -482,8 +439,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project Files/Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Project Files/Tests/FetchableTests-Info.plist";
+				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
+				INFOPLIST_FILE = "Tests/FetchableTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
