@@ -17,6 +17,7 @@
 		F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC49718616BF400FEB151 /* InfoPlist.strings */; };
 		F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEB18B5C31E006CF7A8 /* main.m */; };
 		F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */; };
+		F8C5CCF218B5C5DC006CF7A8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C5CCF118B5C5DC006CF7A8 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F8C5CCEB18B5C31E006CF7A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8C5CCF118B5C5DC006CF7A8 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */,
 				F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */,
+				F8C5CCF018B5C5B5006CF7A8 /* Resources */,
 				F89DC47C18616BF400FEB151 /* Support */,
 			);
 			path = Fetchable;
@@ -139,6 +142,14 @@
 				F89DC49718616BF400FEB151 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8C5CCF018B5C5B5006CF7A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5CCF118B5C5DC006CF7A8 /* Main_iPhone.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C5CCF218B5C5DC006CF7A8 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
