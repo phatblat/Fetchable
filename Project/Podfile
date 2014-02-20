@@ -1,3 +1,5 @@
-platform :ios
+platform :ios, '6.0'
 
-podspec :podspec => '../Fetchable.podspec'
+# podspec :podspec => '../Fetchable.podspec'
+
+pod 'Fetchable', :path => '../'
