@@ -16,6 +16,7 @@
 		F89DC49118616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
 		F89DC49918616BF400FEB151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89DC49718616BF400FEB151 /* InfoPlist.strings */; };
 		F8B7C67218B5C71600A9365E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B7C67118B5C71600A9365E /* Images.xcassets */; };
+		F8B7C67618B5C82800A9365E /* FBLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C67518B5C82800A9365E /* FBLTableViewController.m */; };
 		F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEB18B5C31E006CF7A8 /* main.m */; };
 		F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */; };
 		F8C5CCF218B5C5DC006CF7A8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C5CCF118B5C5DC006CF7A8 /* Main_iPhone.storyboard */; };
@@ -45,6 +46,8 @@
 		F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableTests-Info.plist"; sourceTree = "<group>"; };
 		F89DC49818616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8B7C67118B5C71600A9365E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8B7C67418B5C82800A9365E /* FBLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLTableViewController.h; sourceTree = "<group>"; };
+		F8B7C67518B5C82800A9365E /* FBLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLTableViewController.m; sourceTree = "<group>"; };
 		F8C5CCEB18B5C31E006CF7A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 			children = (
 				F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */,
 				F8C5CCEE18B5C3E8006CF7A8 /* AppDelegate.m */,
+				F8B7C67318B5C7EC00A9365E /* Classes */,
 				F8C5CCF018B5C5B5006CF7A8 /* Resources */,
 				F89DC47C18616BF400FEB151 /* Support */,
 			);
@@ -144,6 +148,15 @@
 				F89DC49718616BF400FEB151 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8B7C67318B5C7EC00A9365E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7C67418B5C82800A9365E /* FBLTableViewController.h */,
+				F8B7C67518B5C82800A9365E /* FBLTableViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F8C5CCF018B5C5B5006CF7A8 /* Resources */ = {
@@ -285,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B7C67618B5C82800A9365E /* FBLTableViewController.m in Sources */,
 				F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */,
 				F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */,
 			);
