@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/phatblat/Fetchable'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author       = { 'Ben Chatelain' => 'benchatelain@gmail.com' }
+  spec.social_media_url = 'https://twitter.com/phatblat'
 
   spec.platform     = :ios, '6.0'
 
