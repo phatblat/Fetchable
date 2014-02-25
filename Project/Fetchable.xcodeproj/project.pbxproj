@@ -22,6 +22,14 @@
 
 /* Begin PBXBuildFile section */
 		A2EDC3F5B1C14CD69931516E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4045EEC386B4438798502151 /* libPods.a */; };
+		F8711D3718BCD99D004797A4 /* _Author.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3018BCD99D004797A4 /* _Author.m */; };
+		F8711D3818BCD99D004797A4 /* _Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3218BCD99D004797A4 /* _Book.m */; };
+		F8711D3918BCD99D004797A4 /* _Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3418BCD99D004797A4 /* _Format.m */; };
+		F8711D3A18BCD99D004797A4 /* _Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3618BCD99D004797A4 /* _Publisher.m */; };
+		F8711D4318BCD9A9004797A4 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3C18BCD9A9004797A4 /* Author.m */; };
+		F8711D4418BCD9A9004797A4 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3E18BCD9A9004797A4 /* Book.m */; };
+		F8711D4518BCD9A9004797A4 /* Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D4018BCD9A9004797A4 /* Format.m */; };
+		F8711D4618BCD9A9004797A4 /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D4218BCD9A9004797A4 /* Publisher.m */; };
 		F89DC47618616BF400FEB151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47518616BF400FEB151 /* Foundation.framework */; };
 		F89DC47818616BF400FEB151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47718616BF400FEB151 /* CoreGraphics.framework */; };
 		F89DC47A18616BF400FEB151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89DC47918616BF400FEB151 /* UIKit.framework */; };
@@ -50,6 +58,22 @@
 /* Begin PBXFileReference section */
 		4045EEC386B4438798502151 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BFC14ED0004481817FF319 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F8711D2F18BCD99D004797A4 /* _Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Author.h; sourceTree = "<group>"; };
+		F8711D3018BCD99D004797A4 /* _Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Author.m; sourceTree = "<group>"; };
+		F8711D3118BCD99D004797A4 /* _Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Book.h; sourceTree = "<group>"; };
+		F8711D3218BCD99D004797A4 /* _Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Book.m; sourceTree = "<group>"; };
+		F8711D3318BCD99D004797A4 /* _Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Format.h; sourceTree = "<group>"; };
+		F8711D3418BCD99D004797A4 /* _Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Format.m; sourceTree = "<group>"; };
+		F8711D3518BCD99D004797A4 /* _Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Publisher.h; sourceTree = "<group>"; };
+		F8711D3618BCD99D004797A4 /* _Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Publisher.m; sourceTree = "<group>"; };
+		F8711D3B18BCD9A9004797A4 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		F8711D3C18BCD9A9004797A4 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		F8711D3D18BCD9A9004797A4 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F8711D3E18BCD9A9004797A4 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F8711D3F18BCD9A9004797A4 /* Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Format.h; sourceTree = "<group>"; };
+		F8711D4018BCD9A9004797A4 /* Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Format.m; sourceTree = "<group>"; };
+		F8711D4118BCD9A9004797A4 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
+		F8711D4218BCD9A9004797A4 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
 		F89DC47218616BF400FEB151 /* Fetchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89DC47518616BF400FEB151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F89DC47718616BF400FEB151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -198,6 +222,14 @@
 		F8B7C68318B5CB4C00A9365E /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
+				F8711D3B18BCD9A9004797A4 /* Author.h */,
+				F8711D3C18BCD9A9004797A4 /* Author.m */,
+				F8711D3D18BCD9A9004797A4 /* Book.h */,
+				F8711D3E18BCD9A9004797A4 /* Book.m */,
+				F8711D3F18BCD9A9004797A4 /* Format.h */,
+				F8711D4018BCD9A9004797A4 /* Format.m */,
+				F8711D4118BCD9A9004797A4 /* Publisher.h */,
+				F8711D4218BCD9A9004797A4 /* Publisher.m */,
 				F8B7C68418B5CB5400A9365E /* _Generated */,
 			);
 			path = "Managed Objects";
@@ -206,6 +238,14 @@
 		F8B7C68418B5CB5400A9365E /* _Generated */ = {
 			isa = PBXGroup;
 			children = (
+				F8711D2F18BCD99D004797A4 /* _Author.h */,
+				F8711D3018BCD99D004797A4 /* _Author.m */,
+				F8711D3118BCD99D004797A4 /* _Book.h */,
+				F8711D3218BCD99D004797A4 /* _Book.m */,
+				F8711D3318BCD99D004797A4 /* _Format.h */,
+				F8711D3418BCD99D004797A4 /* _Format.m */,
+				F8711D3518BCD99D004797A4 /* _Publisher.h */,
+				F8711D3618BCD99D004797A4 /* _Publisher.m */,
 			);
 			path = _Generated;
 			sourceTree = "<group>";
@@ -364,10 +404,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8711D4518BCD9A9004797A4 /* Format.m in Sources */,
+				F8711D4418BCD9A9004797A4 /* Book.m in Sources */,
+				F8711D3818BCD99D004797A4 /* _Book.m in Sources */,
 				F8B7C67618B5C82800A9365E /* FBLTableViewController.m in Sources */,
+				F8711D4618BCD9A9004797A4 /* Publisher.m in Sources */,
+				F8711D4318BCD9A9004797A4 /* Author.m in Sources */,
 				F8C5CCEF18B5C3E8006CF7A8 /* AppDelegate.m in Sources */,
 				F8C5CCEC18B5C31E006CF7A8 /* main.m in Sources */,
+				F8711D3A18BCD99D004797A4 /* _Publisher.m in Sources */,
 				F8B7C68718B5CB8900A9365E /* Fetchable.xcdatamodeld in Sources */,
+				F8711D3718BCD99D004797A4 /* _Author.m in Sources */,
+				F8711D3918BCD99D004797A4 /* _Format.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +643,7 @@
 				F8B7C68018B5CA1D00A9365E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
