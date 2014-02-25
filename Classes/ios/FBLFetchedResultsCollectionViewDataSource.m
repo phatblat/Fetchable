@@ -7,7 +7,6 @@
 //
 
 #import "FBLFetchedResultsCollectionViewDataSource.h"
-#import <CoreData+MagicalRecord.h>
 
 @interface FBLFetchedResultsCollectionViewDataSource ()
 

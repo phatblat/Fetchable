@@ -9,7 +9,6 @@
 #import "FBLFetchedResultsCollectionViewController.h"
 #import "FBLFetchedResultsCollectionViewDataSource.h"
 
-
 @interface FBLFetchedResultsCollectionViewController ()
 
 @property (strong, nonatomic) NSMutableArray *objectChanges;
