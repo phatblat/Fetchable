@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5059" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Entity" syncable="YES">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="author" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="asin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileSize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fileSizeUnits" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="publishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="books" inverseEntity="Author" syncable="YES"/>
+        <relationship name="format" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Format" inverseName="books" inverseEntity="Format" syncable="YES"/>
+        <relationship name="publisher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Publisher" inverseName="books" inverseEntity="Publisher" syncable="YES"/>
+    </entity>
+    <entity name="Format" representedClassName="Format" syncable="YES">
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="format" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Publisher" representedClassName="Publisher" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="publisher" inverseEntity="Book" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Entity" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Author" positionX="-63" positionY="-9" width="128" height="58"/>
+        <element name="Publisher" positionX="-54" positionY="0" width="128" height="73"/>
+        <element name="Format" positionX="-36" positionY="9" width="128" height="58"/>
     </elements>
 </model>
