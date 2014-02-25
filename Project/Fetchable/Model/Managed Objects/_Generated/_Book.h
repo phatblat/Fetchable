@@ -9,6 +9,7 @@ extern const struct BookAttributes {
 	__unsafe_unretained NSString *fileSize;
 	__unsafe_unretained NSString *fileSizeUnits;
 	__unsafe_unretained NSString *pageCount;
+	__unsafe_unretained NSString *price;
 	__unsafe_unretained NSString *publishDate;
 	__unsafe_unretained NSString *title;
 } BookAttributes;
@@ -25,6 +26,7 @@ extern const struct BookFetchedProperties {
 @class Author;
 @class Format;
 @class Publisher;
+
 
 
 
@@ -56,9 +58,13 @@ extern const struct BookFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSDecimalNumber* fileSize;
+@property (nonatomic, strong) NSNumber* fileSize;
 
 
+
+@property float fileSizeValue;
+- (float)fileSizeValue;
+- (void)setFileSizeValue:(float)value_;
 
 //- (BOOL)validateFileSize:(id*)value_ error:(NSError**)error_;
 
@@ -85,6 +91,20 @@ extern const struct BookFetchedProperties {
 - (void)setPageCountValue:(int16_t)value_;
 
 //- (BOOL)validatePageCount:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* price;
+
+
+
+@property float priceValue;
+- (float)priceValue;
+- (void)setPriceValue:(float)value_;
+
+//- (BOOL)validatePrice:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -147,8 +167,11 @@ extern const struct BookFetchedProperties {
 
 
 
-- (NSDecimalNumber*)primitiveFileSize;
-- (void)setPrimitiveFileSize:(NSDecimalNumber*)value;
+- (NSNumber*)primitiveFileSize;
+- (void)setPrimitiveFileSize:(NSNumber*)value;
+
+- (float)primitiveFileSizeValue;
+- (void)setPrimitiveFileSizeValue:(float)value_;
 
 
 
@@ -164,6 +187,15 @@ extern const struct BookFetchedProperties {
 
 - (int16_t)primitivePageCountValue;
 - (void)setPrimitivePageCountValue:(int16_t)value_;
+
+
+
+
+- (NSNumber*)primitivePrice;
+- (void)setPrimitivePrice:(NSNumber*)value;
+
+- (float)primitivePriceValue;
+- (void)setPrimitivePriceValue:(float)value_;
 
 
 

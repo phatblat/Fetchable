@@ -8,6 +8,7 @@ const struct BookAttributes BookAttributes = {
 	.fileSize = @"fileSize",
 	.fileSizeUnits = @"fileSizeUnits",
 	.pageCount = @"pageCount",
+	.price = @"price",
 	.publishDate = @"publishDate",
 	.title = @"title",
 };
@@ -47,8 +48,18 @@ const struct BookFetchedProperties BookFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"fileSizeValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"fileSize"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 	if ([key isEqualToString:@"pageCountValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"pageCount"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"priceValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"price"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
@@ -68,6 +79,25 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 @dynamic fileSize;
 
+
+
+- (float)fileSizeValue {
+	NSNumber *result = [self fileSize];
+	return [result floatValue];
+}
+
+- (void)setFileSizeValue:(float)value_ {
+	[self setFileSize:[NSNumber numberWithFloat:value_]];
+}
+
+- (float)primitiveFileSizeValue {
+	NSNumber *result = [self primitiveFileSize];
+	return [result floatValue];
+}
+
+- (void)setPrimitiveFileSizeValue:(float)value_ {
+	[self setPrimitiveFileSize:[NSNumber numberWithFloat:value_]];
+}
 
 
 
@@ -100,6 +130,32 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 - (void)setPrimitivePageCountValue:(int16_t)value_ {
 	[self setPrimitivePageCount:[NSNumber numberWithShort:value_]];
+}
+
+
+
+
+
+@dynamic price;
+
+
+
+- (float)priceValue {
+	NSNumber *result = [self price];
+	return [result floatValue];
+}
+
+- (void)setPriceValue:(float)value_ {
+	[self setPrice:[NSNumber numberWithFloat:value_]];
+}
+
+- (float)primitivePriceValue {
+	NSNumber *result = [self primitivePrice];
+	return [result floatValue];
+}
+
+- (void)setPrimitivePriceValue:(float)value_ {
+	[self setPrimitivePrice:[NSNumber numberWithFloat:value_]];
 }
 
 
