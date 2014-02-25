@@ -1,19 +1,19 @@
 PODS:
-  - Fetchable (0.0.1):
-    - MagicalRecord (~> 2.2)
+  - Fetchable (0.0.1)
   - MagicalRecord (2.2):
     - MagicalRecord/Core
   - MagicalRecord/Core (2.2)
 
 DEPENDENCIES:
   - Fetchable (from `../`)
+  - MagicalRecord (~> 2.2)
 
 EXTERNAL SOURCES:
   Fetchable:
     :path: ../
 
 SPEC CHECKSUMS:
-  Fetchable: d18aed595e2bbbb2a41f793962ca7746d322c151
+  Fetchable: 3639968c37b43699f2f882c5f0d5ec61848d1c45
   MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
 
 COCOAPODS: 0.29.0

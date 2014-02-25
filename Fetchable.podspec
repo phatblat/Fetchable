@@ -21,6 +21,4 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Classes/**/*.{h,m}'
   spec.framework    = 'CoreData'
   spec.requires_arc = true
-
-  spec.dependency 'MagicalRecord', '~> 2.2'
 end
