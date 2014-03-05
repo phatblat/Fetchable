@@ -49,7 +49,7 @@
 
 - (void)setupData
 {
-    [MagicalRecord setupCoreDataStack];
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
 
     Book *book;
 //    book = [Book MR_importFromObject:@{ @"title": @"Core Data: Data Storage and Management for iOS, OS X, and iCloud",
