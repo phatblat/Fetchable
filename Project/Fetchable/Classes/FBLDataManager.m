@@ -1,8 +1,8 @@
 //
-//  AppDelegate.m
+//  FBLDataManager.m
 //  Fetchable
 //
-//  Created by Ben Chatelain on 2/19/14.
+//  Created by Ben Chatelain on 3/5/14.
 //  Copyright (c) 2014 Ben Chatelain
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,24 +24,44 @@
 //  THE SOFTWARE.
 //
 
-#import "AppDelegate.h"
 #import "FBLDataManager.h"
+#import "Book.h"
+#import <CoreData+MagicalRecord.h>
 
-@implementation AppDelegate
+@implementation FBLDataManager
 
-#pragma mark - UIApplicationDelegate
+#pragma mark - Public Class Methods
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
++ (void)setup
 {
-    [FBLDataManager setup];
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
 
-    return YES;
+    [self importInitialData];
+
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreWithCompletion:nil];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
++ (void)cleanUp
 {
-    [FBLDataManager cleanUp];
+    [MagicalRecord cleanUp];
 }
 
+#pragma mark - Private Class Methods
+
++ (void)importInitialData
+{
+    Book *book;
+    //    book = [Book MR_importFromObject:@{ @"title": @"Core Data: Data Storage and Management for iOS, OS X, and iCloud",
+    //                                        @"asin": @"B00DZ48BM2",
+    //                                        @"fileSize": @"1516",
+    //                                        @"fileSizeUnits": @"KB",
+    //                                        @"pageCount": @"256",
+    //                                        @"price": @"28.51",
+    //                                        @"publishDate": NSNull,
+    //                                      }];
+
+    book = [Book MR_createEntity];
+    book.title = @"Core Data";
+}
 
 @end
