@@ -64,16 +64,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-Z9-yBj">
+                                <rect key="frame" x="20" y="125" width="125" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="9ay-LJ-A08"/>
+                                    <constraint firstAttribute="width" constant="125" id="9eZ-sM-nZB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Dob-Hq-V2Y" firstAttribute="top" secondItem="Fc0-Mb-jLh" secondAttribute="bottom" constant="20" id="PKD-Jq-9w5"/>
                             <constraint firstAttribute="trailing" secondItem="Dob-Hq-V2Y" secondAttribute="trailing" constant="20" id="RTL-9Q-PyB"/>
+                            <constraint firstItem="Dob-Hq-V2Y" firstAttribute="leading" secondItem="8Tf-Z9-yBj" secondAttribute="leading" id="dlT-C8-LBo"/>
                             <constraint firstItem="Dob-Hq-V2Y" firstAttribute="leading" secondItem="jcR-Hr-Tpc" secondAttribute="leading" constant="20" id="gNZ-o2-DTj"/>
+                            <constraint firstItem="8Tf-Z9-yBj" firstAttribute="top" secondItem="Dob-Hq-V2Y" secondAttribute="bottom" constant="20" id="khQ-uY-4Fe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Book Title" id="Tur-Vs-YDB"/>
                     <connections>
+                        <outlet property="bookImage" destination="8Tf-Z9-yBj" id="1fb-57-jI2"/>
                         <outlet property="bookTitle" destination="Dob-Hq-V2Y" id="Afp-d2-awz"/>
                     </connections>
                 </viewController>

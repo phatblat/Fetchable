@@ -8,10 +8,12 @@ extern const struct BookAttributes {
 	__unsafe_unretained NSString *asin;
 	__unsafe_unretained NSString *fileSize;
 	__unsafe_unretained NSString *fileSizeUnits;
+	__unsafe_unretained NSString *image;
 	__unsafe_unretained NSString *pageCount;
 	__unsafe_unretained NSString *price;
 	__unsafe_unretained NSString *publishDate;
 	__unsafe_unretained NSString *title;
+	__unsafe_unretained NSString *url;
 } BookAttributes;
 
 extern const struct BookRelationships {
@@ -26,6 +28,8 @@ extern const struct BookFetchedProperties {
 @class Author;
 @class Format;
 @class Publisher;
+
+
 
 
 
@@ -82,6 +86,16 @@ extern const struct BookFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* image;
+
+
+
+//- (BOOL)validateImage:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSNumber* pageCount;
 
 
@@ -125,6 +139,16 @@ extern const struct BookFetchedProperties {
 
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* url;
+
+
+
+//- (BOOL)validateUrl:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -182,6 +206,12 @@ extern const struct BookFetchedProperties {
 
 
 
+- (NSString*)primitiveImage;
+- (void)setPrimitiveImage:(NSString*)value;
+
+
+
+
 - (NSNumber*)primitivePageCount;
 - (void)setPrimitivePageCount:(NSNumber*)value;
 
@@ -208,6 +238,12 @@ extern const struct BookFetchedProperties {
 
 - (NSString*)primitiveTitle;
 - (void)setPrimitiveTitle:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveUrl;
+- (void)setPrimitiveUrl:(NSString*)value;
 
 
 

@@ -7,10 +7,12 @@ const struct BookAttributes BookAttributes = {
 	.asin = @"asin",
 	.fileSize = @"fileSize",
 	.fileSizeUnits = @"fileSizeUnits",
+	.image = @"image",
 	.pageCount = @"pageCount",
 	.price = @"price",
 	.publishDate = @"publishDate",
 	.title = @"title",
+	.url = @"url",
 };
 
 const struct BookRelationships BookRelationships = {
@@ -110,6 +112,13 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 
 
+@dynamic image;
+
+
+
+
+
+
 @dynamic pageCount;
 
 
@@ -170,6 +179,13 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 
 @dynamic title;
+
+
+
+
+
+
+@dynamic url;
 
 
 

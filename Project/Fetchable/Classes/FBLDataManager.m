@@ -57,6 +57,8 @@
                                         @"fileSizeUnits": @"KB",
                                         @"pageCount": @"256",
                                         @"price": @"28.51",
+                                        @"image": @"coredata",
+                                        @"url": @"http://www.amazon.com/Core-Data-Management-Pragmatic-Programmers/dp/1937785084",
 //                                        @"publishDate": NSNull,
                                       }];
 
