@@ -26,10 +26,13 @@
 
 #import "FBLTableViewController.h"
 #import "Book.h"
+#import "FBLBookViewController.h"
 #import <FBLFetchedResultsTableViewDataSource.h>
 #import <CoreData+MagicalRecord.h>
 
 @implementation FBLTableViewController
+
+#pragma mark - UIViewController
 
 - (void)viewDidLoad
 {
@@ -47,6 +50,16 @@
     self.dataSource = [[FBLFetchedResultsTableViewDataSource alloc] initWithFetchedResultsController:frc
                                                                                       cellIdentifier:@"BookCell"
                                                                                   configureCellBlock:configureCellBlock];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"BookDetails"]) {
+        // Pass off the selected entity
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Book *book = [self.dataSource itemAtIndexPath:indexPath];
+        ((FBLBookViewController *)segue.destinationViewController).book = book;
+    }
 }
 
 @end

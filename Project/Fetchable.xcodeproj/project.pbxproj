@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		A2EDC3F5B1C14CD69931516E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4045EEC386B4438798502151 /* libPods.a */; };
 		F857E68A18C75A00005EADD5 /* FBLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F857E68918C75A00005EADD5 /* FBLDataManager.m */; };
+		F857E68D18C75BD2005EADD5 /* FBLBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F857E68C18C75BD2005EADD5 /* FBLBookViewController.m */; };
 		F8711D3718BCD99D004797A4 /* _Author.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3018BCD99D004797A4 /* _Author.m */; };
 		F8711D3818BCD99D004797A4 /* _Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3218BCD99D004797A4 /* _Book.m */; };
 		F8711D3918BCD99D004797A4 /* _Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F8711D3418BCD99D004797A4 /* _Format.m */; };
@@ -61,6 +62,8 @@
 		B0BFC14ED0004481817FF319 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F857E68818C75A00005EADD5 /* FBLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLDataManager.h; sourceTree = "<group>"; };
 		F857E68918C75A00005EADD5 /* FBLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLDataManager.m; sourceTree = "<group>"; };
+		F857E68B18C75BD2005EADD5 /* FBLBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLBookViewController.h; sourceTree = "<group>"; };
+		F857E68C18C75BD2005EADD5 /* FBLBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLBookViewController.m; sourceTree = "<group>"; };
 		F8711D2F18BCD99D004797A4 /* _Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Author.h; sourceTree = "<group>"; };
 		F8711D3018BCD99D004797A4 /* _Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Author.m; sourceTree = "<group>"; };
 		F8711D3118BCD99D004797A4 /* _Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Book.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 		F8B7C67318B5C7EC00A9365E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F857E68B18C75BD2005EADD5 /* FBLBookViewController.h */,
+				F857E68C18C75BD2005EADD5 /* FBLBookViewController.m */,
 				F857E68818C75A00005EADD5 /* FBLDataManager.h */,
 				F857E68918C75A00005EADD5 /* FBLDataManager.m */,
 				F8B7C67418B5C82800A9365E /* FBLTableViewController.h */,
@@ -409,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F857E68D18C75BD2005EADD5 /* FBLBookViewController.m in Sources */,
 				F8711D4518BCD9A9004797A4 /* Format.m in Sources */,
 				F8711D4418BCD9A9004797A4 /* Book.m in Sources */,
 				F8711D3818BCD99D004797A4 /* _Book.m in Sources */,
