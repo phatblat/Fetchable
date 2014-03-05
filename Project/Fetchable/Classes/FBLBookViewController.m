@@ -30,4 +30,11 @@
     self.bookImage.image = [UIImage imageNamed:self.book.image];
 }
 
+#pragma mark - IBAction Methods
+
+- (IBAction)buyBook:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.book.url]];
+}
+
 @end

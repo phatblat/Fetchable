@@ -72,14 +72,26 @@
                                     <constraint firstAttribute="width" constant="125" id="9eZ-sM-nZB"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djP-CH-wxe">
+                                <rect key="frame" x="110" y="502" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Buy This Book">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyBook:" destination="6x0-XG-dnl" eventType="touchUpInside" id="Q09-PY-C7h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UHH-0I-XFy" firstAttribute="top" secondItem="djP-CH-wxe" secondAttribute="bottom" constant="36" id="DoL-8p-r6I"/>
                             <constraint firstItem="Dob-Hq-V2Y" firstAttribute="top" secondItem="Fc0-Mb-jLh" secondAttribute="bottom" constant="20" id="PKD-Jq-9w5"/>
                             <constraint firstAttribute="trailing" secondItem="Dob-Hq-V2Y" secondAttribute="trailing" constant="20" id="RTL-9Q-PyB"/>
                             <constraint firstItem="Dob-Hq-V2Y" firstAttribute="leading" secondItem="8Tf-Z9-yBj" secondAttribute="leading" id="dlT-C8-LBo"/>
                             <constraint firstItem="Dob-Hq-V2Y" firstAttribute="leading" secondItem="jcR-Hr-Tpc" secondAttribute="leading" constant="20" id="gNZ-o2-DTj"/>
                             <constraint firstItem="8Tf-Z9-yBj" firstAttribute="top" secondItem="Dob-Hq-V2Y" secondAttribute="bottom" constant="20" id="khQ-uY-4Fe"/>
+                            <constraint firstAttribute="centerX" secondItem="djP-CH-wxe" secondAttribute="centerX" id="wif-wl-sjV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Book Title" id="Tur-Vs-YDB"/>
