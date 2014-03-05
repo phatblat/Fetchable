@@ -7,8 +7,14 @@
 //
 
 #import "FBLBookViewController.h"
-
 #import "Book.h"
+
+
+@interface FBLBookViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *bookTitle;
+
+@end
 
 @implementation FBLBookViewController
 
@@ -19,6 +25,7 @@
     [super viewDidLoad];
 
     self.navigationItem.title = self.book.title;
+    self.bookTitle.text = self.book.title;
 }
 
 @end

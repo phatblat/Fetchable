@@ -45,7 +45,7 @@
             </objects>
             <point key="canvasLocation" x="815" y="137"/>
         </scene>
-        <!--Book View Controller-->
+        <!--Book View Controller - Book Title-->
         <scene sceneID="vDM-k5-mPQ">
             <objects>
                 <viewController id="6x0-XG-dnl" customClass="FBLBookViewController" sceneMemberID="viewController">
@@ -56,9 +56,26 @@
                     <view key="view" contentMode="scaleToFill" id="jcR-Hr-Tpc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Dob-Hq-V2Y">
+                                <rect key="frame" x="20" y="84" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dob-Hq-V2Y" firstAttribute="top" secondItem="Fc0-Mb-jLh" secondAttribute="bottom" constant="20" id="PKD-Jq-9w5"/>
+                            <constraint firstAttribute="trailing" secondItem="Dob-Hq-V2Y" secondAttribute="trailing" constant="20" id="RTL-9Q-PyB"/>
+                            <constraint firstItem="Dob-Hq-V2Y" firstAttribute="leading" secondItem="jcR-Hr-Tpc" secondAttribute="leading" constant="20" id="gNZ-o2-DTj"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Tur-Vs-YDB"/>
+                    <navigationItem key="navigationItem" title="Book Title" id="Tur-Vs-YDB"/>
+                    <connections>
+                        <outlet property="bookTitle" destination="Dob-Hq-V2Y" id="Afp-d2-awz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQA-xG-GsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
