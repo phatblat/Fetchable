@@ -51,19 +51,23 @@
 + (void)importInitialData
 {
     Book *book;
-    book = [Book MR_importFromObject:@{ @"title": @"Core Data: Data Storage and Management for iOS, OS X, and iCloud",
+    book = [Book MR_importFromObject:@{ @"bookID": @1,
+                                        @"title": @"Core Data: Data Storage and Management for iOS, OS X, and iCloud",
                                         @"asin": @"B00DZ48BM2",
                                         @"fileSize": @"1516",
                                         @"fileSizeUnits": @"KB",
-                                        @"pageCount": @"256",
+//                                        @"pageCount": @"256",
                                         @"price": @"28.51",
                                         @"image": @"coredata",
                                         @"url": @"http://www.amazon.com/Core-Data-Management-Pragmatic-Programmers/dp/1937785084",
-//                                        @"publishDate": NSNull,
-                                      }];
-
-//    book = [Book MR_createEntity];
-//    book.title = @"Core Data";
+                                        }];
+    book = [Book MR_importFromObject:@{ @"bookID": @2,
+                                        @"title": @"The Advanced iOS 6 Developer's Cookbook",
+                                        @"pageCount": @"528",
+                                        @"price": @"27.76",
+                                        @"image": @"advancedios6",
+                                        @"url": @"http://www.amazon.com/Advanced-Developers-Cookbook-Edition-Library/dp/0321884221/",
+                                        }];
 }
 
 @end

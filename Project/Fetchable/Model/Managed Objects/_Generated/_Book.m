@@ -5,6 +5,7 @@
 
 const struct BookAttributes BookAttributes = {
 	.asin = @"asin",
+	.bookID = @"bookID",
 	.fileSize = @"fileSize",
 	.fileSizeUnits = @"fileSizeUnits",
 	.image = @"image",
@@ -50,6 +51,11 @@ const struct BookFetchedProperties BookFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"bookIDValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"bookID"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 	if ([key isEqualToString:@"fileSizeValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"fileSize"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -74,6 +80,32 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 @dynamic asin;
 
+
+
+
+
+
+@dynamic bookID;
+
+
+
+- (int16_t)bookIDValue {
+	NSNumber *result = [self bookID];
+	return [result shortValue];
+}
+
+- (void)setBookIDValue:(int16_t)value_ {
+	[self setBookID:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveBookIDValue {
+	NSNumber *result = [self primitiveBookID];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveBookIDValue:(int16_t)value_ {
+	[self setPrimitiveBookID:[NSNumber numberWithShort:value_]];
+}
 
 
 

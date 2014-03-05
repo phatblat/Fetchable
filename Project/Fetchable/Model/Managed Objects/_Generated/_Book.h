@@ -6,6 +6,7 @@
 
 extern const struct BookAttributes {
 	__unsafe_unretained NSString *asin;
+	__unsafe_unretained NSString *bookID;
 	__unsafe_unretained NSString *fileSize;
 	__unsafe_unretained NSString *fileSizeUnits;
 	__unsafe_unretained NSString *image;
@@ -39,6 +40,7 @@ extern const struct BookFetchedProperties {
 
 
 
+
 @interface BookID : NSManagedObjectID {}
 @end
 
@@ -57,6 +59,20 @@ extern const struct BookFetchedProperties {
 
 
 //- (BOOL)validateAsin:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* bookID;
+
+
+
+@property int16_t bookIDValue;
+- (int16_t)bookIDValue;
+- (void)setBookIDValue:(int16_t)value_;
+
+//- (BOOL)validateBookID:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -187,6 +203,15 @@ extern const struct BookFetchedProperties {
 
 - (NSString*)primitiveAsin;
 - (void)setPrimitiveAsin:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveBookID;
+- (void)setPrimitiveBookID:(NSNumber*)value;
+
+- (int16_t)primitiveBookIDValue;
+- (void)setPrimitiveBookIDValue:(int16_t)value_;
 
 
 

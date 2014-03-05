@@ -5,6 +5,7 @@
     </entity>
     <entity name="Book" representedClassName="Book" syncable="YES">
         <attribute name="asin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="fileSize" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="fileSizeUnits" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,7 +27,7 @@
     </entity>
     <elements>
         <element name="Author" positionX="-846" positionY="-315" width="128" height="58"/>
-        <element name="Book" positionX="-63" positionY="-423" width="128" height="225"/>
+        <element name="Book" positionX="-63" positionY="-423" width="128" height="240"/>
         <element name="Format" positionX="306" positionY="-297" width="128" height="58"/>
         <element name="Publisher" positionX="178" positionY="-99" width="128" height="73"/>
     </elements>
