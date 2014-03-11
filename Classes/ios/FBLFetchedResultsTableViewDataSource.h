@@ -38,6 +38,11 @@ typedef void (^ConfigureCellBlock)(UITableViewCell *, id);
 @interface FBLFetchedResultsTableViewDataSource : NSObject <UITableViewDataSource>
 
 /**
+ The underlying NSFetchedResultsController providing the data. Exposed so that the NSFetchedResultsControllerDelegate can disconnect when the view controller disappears.
+ */
+@property (readonly, nonatomic) NSFetchedResultsController *frc;
+
+/**
  This is not the initializer you're looking for.
  */
 - (id)init __attribute__((unavailable("Designated Initializer initWithFetchedResultsController:cellIdentifier:configureCellBlock: must be used.")));

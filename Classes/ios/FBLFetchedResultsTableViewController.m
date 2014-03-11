@@ -28,12 +28,6 @@
 #import "FBLFetchedResultsTableViewController.h"
 #import "FBLFetchedResultsTableViewDataSource.h"
 
-@interface FBLFetchedResultsTableViewController ()
-
-@property (assign, getter = isVisible, nonatomic) BOOL visible;
-
-@end
-
 @implementation FBLFetchedResultsTableViewController
 
 #pragma mark - UIViewController
@@ -41,12 +35,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.visible = YES;
+    self.dataSource.frc.delegate = self;
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    self.visible = NO;
+    self.dataSource.frc.delegate = nil;
     [super viewDidDisappear:animated];
 }
 
@@ -65,18 +59,12 @@
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
-    if (self.isVisible) {
-        [self.tableView beginUpdates];
-    }
+    [self.tableView beginUpdates];
 }
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
            atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
 {
-    if (!self.isVisible) {
-        return;
-    }
-
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex]
@@ -94,10 +82,6 @@
        atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
       newIndexPath:(NSIndexPath *)newIndexPath
 {
-    if (!self.isVisible) {
-        return;
-    }
-
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
