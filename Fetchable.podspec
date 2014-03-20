@@ -13,9 +13,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '6.0'
 
   spec.source       = { :git => 'https://github.com/phatblat/Fetchable.git',
-                        :branch  => 'master'
-                        # :tag => "#{spec.version}"
-                        # :commit => 'fdaf35f17fd279397d1ae5a79db76afc8c841797'
+                        :branch  => 'master',
+                        # :tag => spec.version.to_s,
+                        # :commit => 'fdaf35f17fd279397d1ae5a79db76afc8c841797',
                       }
 
   spec.source_files = 'Classes/**/*.{h,m}'
