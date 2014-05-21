@@ -26,7 +26,6 @@
 //
 
 #import "FBLFetchedResultsTableViewDataSource.h"
-#import <CoreData+MagicalRecord.h>
 
 @interface FBLFetchedResultsTableViewDataSource ()
 
