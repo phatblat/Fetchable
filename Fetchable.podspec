@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                     Stop copy/pasting your `NSFetchedResultsControllerDelegate` implementations around!
 
-                    FRC-backed UITableView and UICollectionViewControllers in as little as 47 lines of code.
+                    FRC-backed UITableView and UICollectionViewControllers in very little code.
                     DESC
   spec.homepage     = 'https://github.com/phatblat/Fetchable'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
