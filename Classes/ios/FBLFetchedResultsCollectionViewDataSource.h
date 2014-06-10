@@ -25,8 +25,10 @@
 //
 //
 
-@import UIKit;
-@import CoreData.NSFetchedResultsController;
+#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+//@import UIKit;
+//@import CoreData.NSFetchedResultsController;
 
 typedef void (^ConfigureCellBlock)(UICollectionViewCell *, id);
 

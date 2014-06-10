@@ -25,8 +25,10 @@
 //
 //
 
-@import CoreData;
-@import UIKit.UICollectionViewController;
+#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+//@import CoreData;
+//@import UIKit.UICollectionViewController;
 
 @class FBLFetchedResultsCollectionViewDataSource;
 

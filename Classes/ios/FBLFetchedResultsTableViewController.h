@@ -25,8 +25,10 @@
 //
 //
 
-@import CoreData;
-@import UIKit.UITableViewController;
+#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+//@import CoreData;
+//@import UIKit.UITableViewController;
 
 @class FBLFetchedResultsTableViewDataSource;
 
