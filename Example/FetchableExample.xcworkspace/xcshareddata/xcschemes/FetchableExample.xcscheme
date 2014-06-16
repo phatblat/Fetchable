@@ -15,20 +15,6 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F89DC47118616BF400FEB151"
-               BuildableName = "Fetchable.app"
-               BlueprintName = "Fetchable"
-               ReferencedContainer = "container:Fetchable.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F89DC47118616BF400FEB151"
                BuildableName = "FetchableExample.app"
                BlueprintName = "FetchableExample"
                ReferencedContainer = "container:FetchableExample.xcodeproj">
@@ -61,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F89DC48C18616BF400FEB151"
-               BuildableName = "FetchableTests.xctest"
-               BlueprintName = "FetchableTests"
-               ReferencedContainer = "container:Fetchable.xcodeproj">
+               BuildableName = "FetchableExampleTests.xctest"
+               BlueprintName = "FetchableExampleTests"
+               ReferencedContainer = "container:FetchableExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F89DC47118616BF400FEB151"
-            BuildableName = "Fetchable.app"
-            BlueprintName = "Fetchable"
-            ReferencedContainer = "container:Fetchable.xcodeproj">
+            BuildableName = "FetchableExample.app"
+            BlueprintName = "FetchableExample"
+            ReferencedContainer = "container:FetchableExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -91,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F89DC47118616BF400FEB151"
-            BuildableName = "Fetchable.app"
-            BlueprintName = "Fetchable"
-            ReferencedContainer = "container:Fetchable.xcodeproj">
+            BuildableName = "FetchableExample.app"
+            BlueprintName = "FetchableExample"
+            ReferencedContainer = "container:FetchableExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -109,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F89DC47118616BF400FEB151"
-            BuildableName = "Fetchable.app"
-            BlueprintName = "Fetchable"
-            ReferencedContainer = "container:Fetchable.xcodeproj">
+            BuildableName = "FetchableExample.app"
+            BlueprintName = "FetchableExample"
+            ReferencedContainer = "container:FetchableExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
