@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Fetchable'
-  spec.version      = '0.9.2'
+  spec.version      = '0.9.3'
   spec.summary      = 'Easy FRC-backed UITableView and UICollectionViewControllers'
   spec.description  = <<-DESC
                     Stop copy/pasting your `NSFetchedResultsControllerDelegate` implementations around!

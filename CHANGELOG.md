@@ -1,5 +1,9 @@
 # Fetchable CHANGELOG
 
+## 0.9.3
+
+* Collection view layout invalidation in -controllerDidChangeContent:
+
 ## 0.9.2
 
 * Fixes in *DataSource protocol implementations
