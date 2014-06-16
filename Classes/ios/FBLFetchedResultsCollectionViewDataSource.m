@@ -52,6 +52,13 @@
     return self;
 }
 
+#pragma mark - NSObject
+
+- (void)dealloc
+{
+    _frc.delegate = nil;
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
