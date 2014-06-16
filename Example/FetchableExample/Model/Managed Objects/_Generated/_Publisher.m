@@ -11,9 +11,6 @@ const struct PublisherRelationships PublisherRelationships = {
 	.books = @"books",
 };
 
-const struct PublisherFetchedProperties PublisherFetchedProperties = {
-};
-
 @implementation PublisherID
 @end
 
@@ -39,37 +36,22 @@ const struct PublisherFetchedProperties PublisherFetchedProperties = {
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
-	
 
 	return keyPaths;
 }
 
-
-
-
 @dynamic name;
-
-
-
-
-
 
 @dynamic books;
 
-	
 - (NSMutableSet*)booksSet {
 	[self willAccessValueForKey:@"books"];
-  
+
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"books"];
-  
+
 	[self didAccessValueForKey:@"books"];
 	return result;
 }
-	
-
-
-
-
-
 
 @end
+

@@ -3,7 +3,6 @@
 
 #import <CoreData/CoreData.h>
 
-
 extern const struct BookAttributes {
 	__unsafe_unretained NSString *asin;
 	__unsafe_unretained NSString *bookID;
@@ -23,23 +22,9 @@ extern const struct BookRelationships {
 	__unsafe_unretained NSString *publisher;
 } BookRelationships;
 
-extern const struct BookFetchedProperties {
-} BookFetchedProperties;
-
 @class Author;
 @class Format;
 @class Publisher;
-
-
-
-
-
-
-
-
-
-
-
 
 @interface BookID : NSManagedObjectID {}
 @end
@@ -50,242 +35,127 @@ extern const struct BookFetchedProperties {
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (BookID*)objectID;
 
-
-
-
-
-@property (nonatomic, strong) NSString* asin;
-
-
+@property (nonatomic, strong) NSString * asin;
 
 //- (BOOL)validateAsin:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber * bookID;
 
-
-
-
-@property (nonatomic, strong) NSNumber* bookID;
-
-
-
-@property int16_t bookIDValue;
+@property (atomic) int16_t bookIDValue;
 - (int16_t)bookIDValue;
 - (void)setBookIDValue:(int16_t)value_;
 
 //- (BOOL)validateBookID:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber * fileSize;
 
-
-
-
-@property (nonatomic, strong) NSNumber* fileSize;
-
-
-
-@property float fileSizeValue;
+@property (atomic) float fileSizeValue;
 - (float)fileSizeValue;
 - (void)setFileSizeValue:(float)value_;
 
 //- (BOOL)validateFileSize:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@property (nonatomic, strong) NSString* fileSizeUnits;
-
-
+@property (nonatomic, strong) NSString * fileSizeUnits;
 
 //- (BOOL)validateFileSizeUnits:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@property (nonatomic, strong) NSString* image;
-
-
+@property (nonatomic, strong) NSString * image;
 
 //- (BOOL)validateImage:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber * pageCount;
 
-
-
-
-@property (nonatomic, strong) NSNumber* pageCount;
-
-
-
-@property int16_t pageCountValue;
+@property (atomic) int16_t pageCountValue;
 - (int16_t)pageCountValue;
 - (void)setPageCountValue:(int16_t)value_;
 
 //- (BOOL)validatePageCount:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber * price;
 
-
-
-
-@property (nonatomic, strong) NSNumber* price;
-
-
-
-@property float priceValue;
+@property (atomic) float priceValue;
 - (float)priceValue;
 - (void)setPriceValue:(float)value_;
 
 //- (BOOL)validatePrice:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@property (nonatomic, strong) NSDate* publishDate;
-
-
+@property (nonatomic, strong) NSDate * publishDate;
 
 //- (BOOL)validatePublishDate:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@property (nonatomic, strong) NSString* title;
-
-
+@property (nonatomic, strong) NSString * title;
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@property (nonatomic, strong) NSString* url;
-
-
+@property (nonatomic, strong) NSString * url;
 
 //- (BOOL)validateUrl:(id*)value_ error:(NSError**)error_;
-
-
-
-
 
 @property (nonatomic, strong) Author *author;
 
 //- (BOOL)validateAuthor:(id*)value_ error:(NSError**)error_;
 
-
-
-
 @property (nonatomic, strong) Format *format;
 
 //- (BOOL)validateFormat:(id*)value_ error:(NSError**)error_;
-
-
-
 
 @property (nonatomic, strong) Publisher *publisher;
 
 //- (BOOL)validatePublisher:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
-@end
-
-@interface _Book (CoreDataGeneratedAccessors)
-
 @end
 
 @interface _Book (CoreDataGeneratedPrimitiveAccessors)
 
+- (NSString *)primitiveAsin;
+- (void)setPrimitiveAsin:(NSString *)value;
 
-- (NSString*)primitiveAsin;
-- (void)setPrimitiveAsin:(NSString*)value;
-
-
-
-
-- (NSNumber*)primitiveBookID;
-- (void)setPrimitiveBookID:(NSNumber*)value;
+- (NSNumber *)primitiveBookID;
+- (void)setPrimitiveBookID:(NSNumber *)value;
 
 - (int16_t)primitiveBookIDValue;
 - (void)setPrimitiveBookIDValue:(int16_t)value_;
 
-
-
-
-- (NSNumber*)primitiveFileSize;
-- (void)setPrimitiveFileSize:(NSNumber*)value;
+- (NSNumber *)primitiveFileSize;
+- (void)setPrimitiveFileSize:(NSNumber *)value;
 
 - (float)primitiveFileSizeValue;
 - (void)setPrimitiveFileSizeValue:(float)value_;
 
+- (NSString *)primitiveFileSizeUnits;
+- (void)setPrimitiveFileSizeUnits:(NSString *)value;
 
+- (NSString *)primitiveImage;
+- (void)setPrimitiveImage:(NSString *)value;
 
-
-- (NSString*)primitiveFileSizeUnits;
-- (void)setPrimitiveFileSizeUnits:(NSString*)value;
-
-
-
-
-- (NSString*)primitiveImage;
-- (void)setPrimitiveImage:(NSString*)value;
-
-
-
-
-- (NSNumber*)primitivePageCount;
-- (void)setPrimitivePageCount:(NSNumber*)value;
+- (NSNumber *)primitivePageCount;
+- (void)setPrimitivePageCount:(NSNumber *)value;
 
 - (int16_t)primitivePageCountValue;
 - (void)setPrimitivePageCountValue:(int16_t)value_;
 
-
-
-
-- (NSNumber*)primitivePrice;
-- (void)setPrimitivePrice:(NSNumber*)value;
+- (NSNumber *)primitivePrice;
+- (void)setPrimitivePrice:(NSNumber *)value;
 
 - (float)primitivePriceValue;
 - (void)setPrimitivePriceValue:(float)value_;
 
+- (NSDate *)primitivePublishDate;
+- (void)setPrimitivePublishDate:(NSDate *)value;
 
+- (NSString *)primitiveTitle;
+- (void)setPrimitiveTitle:(NSString *)value;
 
-
-- (NSDate*)primitivePublishDate;
-- (void)setPrimitivePublishDate:(NSDate*)value;
-
-
-
-
-- (NSString*)primitiveTitle;
-- (void)setPrimitiveTitle:(NSString*)value;
-
-
-
-
-- (NSString*)primitiveUrl;
-- (void)setPrimitiveUrl:(NSString*)value;
-
-
-
-
+- (NSString *)primitiveUrl;
+- (void)setPrimitiveUrl:(NSString *)value;
 
 - (Author*)primitiveAuthor;
 - (void)setPrimitiveAuthor:(Author*)value;
 
-
-
 - (Format*)primitiveFormat;
 - (void)setPrimitiveFormat:(Format*)value;
 
-
-
 - (Publisher*)primitivePublisher;
 - (void)setPrimitivePublisher:(Publisher*)value;
-
 
 @end

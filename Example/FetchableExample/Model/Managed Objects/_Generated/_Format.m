@@ -3,14 +3,8 @@
 
 #import "_Format.h"
 
-const struct FormatAttributes FormatAttributes = {
-};
-
 const struct FormatRelationships FormatRelationships = {
 	.books = @"books",
-};
-
-const struct FormatFetchedProperties FormatFetchedProperties = {
 };
 
 @implementation FormatID
@@ -38,30 +32,20 @@ const struct FormatFetchedProperties FormatFetchedProperties = {
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
-	
 
 	return keyPaths;
 }
 
-
-
-
 @dynamic books;
 
-	
 - (NSMutableSet*)booksSet {
 	[self willAccessValueForKey:@"books"];
-  
+
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"books"];
-  
+
 	[self didAccessValueForKey:@"books"];
 	return result;
 }
-	
-
-
-
-
-
 
 @end
+

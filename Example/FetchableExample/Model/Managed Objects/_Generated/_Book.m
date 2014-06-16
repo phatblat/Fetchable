@@ -22,9 +22,6 @@ const struct BookRelationships BookRelationships = {
 	.publisher = @"publisher",
 };
 
-const struct BookFetchedProperties BookFetchedProperties = {
-};
-
 @implementation BookID
 @end
 
@@ -50,7 +47,7 @@ const struct BookFetchedProperties BookFetchedProperties = {
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
-	
+
 	if ([key isEqualToString:@"bookIDValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"bookID"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -75,19 +72,9 @@ const struct BookFetchedProperties BookFetchedProperties = {
 	return keyPaths;
 }
 
-
-
-
 @dynamic asin;
 
-
-
-
-
-
 @dynamic bookID;
-
-
 
 - (int16_t)bookIDValue {
 	NSNumber *result = [self bookID];
@@ -95,7 +82,7 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setBookIDValue:(int16_t)value_ {
-	[self setBookID:[NSNumber numberWithShort:value_]];
+	[self setBookID:@(value_)];
 }
 
 - (int16_t)primitiveBookIDValue {
@@ -104,16 +91,10 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPrimitiveBookIDValue:(int16_t)value_ {
-	[self setPrimitiveBookID:[NSNumber numberWithShort:value_]];
+	[self setPrimitiveBookID:@(value_)];
 }
 
-
-
-
-
 @dynamic fileSize;
-
-
 
 - (float)fileSizeValue {
 	NSNumber *result = [self fileSize];
@@ -121,7 +102,7 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setFileSizeValue:(float)value_ {
-	[self setFileSize:[NSNumber numberWithFloat:value_]];
+	[self setFileSize:@(value_)];
 }
 
 - (float)primitiveFileSizeValue {
@@ -130,30 +111,14 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPrimitiveFileSizeValue:(float)value_ {
-	[self setPrimitiveFileSize:[NSNumber numberWithFloat:value_]];
+	[self setPrimitiveFileSize:@(value_)];
 }
-
-
-
-
 
 @dynamic fileSizeUnits;
 
-
-
-
-
-
 @dynamic image;
 
-
-
-
-
-
 @dynamic pageCount;
-
-
 
 - (int16_t)pageCountValue {
 	NSNumber *result = [self pageCount];
@@ -161,7 +126,7 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPageCountValue:(int16_t)value_ {
-	[self setPageCount:[NSNumber numberWithShort:value_]];
+	[self setPageCount:@(value_)];
 }
 
 - (int16_t)primitivePageCountValue {
@@ -170,16 +135,10 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPrimitivePageCountValue:(int16_t)value_ {
-	[self setPrimitivePageCount:[NSNumber numberWithShort:value_]];
+	[self setPrimitivePageCount:@(value_)];
 }
 
-
-
-
-
 @dynamic price;
-
-
 
 - (float)priceValue {
 	NSNumber *result = [self price];
@@ -187,7 +146,7 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPriceValue:(float)value_ {
-	[self setPrice:[NSNumber numberWithFloat:value_]];
+	[self setPrice:@(value_)];
 }
 
 - (float)primitivePriceValue {
@@ -196,49 +155,20 @@ const struct BookFetchedProperties BookFetchedProperties = {
 }
 
 - (void)setPrimitivePriceValue:(float)value_ {
-	[self setPrimitivePrice:[NSNumber numberWithFloat:value_]];
+	[self setPrimitivePrice:@(value_)];
 }
-
-
-
-
 
 @dynamic publishDate;
 
-
-
-
-
-
 @dynamic title;
-
-
-
-
-
 
 @dynamic url;
 
-
-
-
-
-
 @dynamic author;
-
-	
 
 @dynamic format;
 
-	
-
 @dynamic publisher;
 
-	
-
-
-
-
-
-
 @end
+
