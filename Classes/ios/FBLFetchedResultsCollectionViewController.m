@@ -154,6 +154,8 @@
         }
     }
 
+    [self.collectionViewLayout invalidateLayout];
+
     [self.sectionChanges removeAllObjects];
     [self.objectChanges removeAllObjects];
 }
