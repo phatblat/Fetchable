@@ -31,7 +31,7 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *frc;
 @property (strong, nonatomic) NSString *cellIdentifier;
-@property (strong, nonatomic) ConfigureCellBlock configureCellBlock;
+@property (strong, nonatomic) FBLConfigureCellBlock configureCellBlock;
 
 @end
 
@@ -41,7 +41,7 @@
 
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController *)frc
                                   cellIdentifier:(NSString *)cellIdentifier
-                              configureCellBlock:(ConfigureCellBlock)configureCellBlock
+                              configureCellBlock:(FBLConfigureCellBlock)configureCellBlock
 {
     if ((self = [super init])) {
         // TODO: Validate parameters

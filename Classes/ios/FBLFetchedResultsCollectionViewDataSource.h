@@ -30,7 +30,7 @@
 //@import UIKit;
 //@import CoreData.NSFetchedResultsController;
 
-typedef void (^ConfigureCellBlock)(UICollectionViewCell *, id);
+typedef void (^FBLConfigureCellBlock)(UICollectionViewCell *, id);
 
 /**
  A generic, reusable implementation of UICollectionViewDataSource for collections backed by an NSFetchedResultsController. After initializing this class, make sure to store a strong reference to it somewhere so that it doesn't get deallocated by ARC while it's still needed. The collectionView.dataSource outlet is weak and will not keep created instances around.
@@ -51,11 +51,11 @@ typedef void (^ConfigureCellBlock)(UICollectionViewCell *, id);
 
  @param frc A primed NSFetchedResultsController instance.
  @param cellIdentifier The NSString used to identify the cell in the storyboard
- @param configureCellBlock A block of type ConfigureCellBlock which is used to hold the custom configuration logic
+ @param configureCellBlock A block of type FBLConfigureCellBlock which is used to hold the custom configuration logic
  */
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController *)frc
                                   cellIdentifier:(NSString *)cellIdentifier
-                              configureCellBlock:(ConfigureCellBlock)configureCellBlock __attribute__((objc_designated_initializer));
+                              configureCellBlock:(FBLConfigureCellBlock)configureCellBlock __attribute__((objc_designated_initializer));
 
 #pragma mark - Convenience Methods
 

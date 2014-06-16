@@ -38,7 +38,7 @@
 {
     [super viewDidLoad];
 
-    ConfigureCellBlock configureCellBlock = ^(UITableViewCell *tableCell, id item) {
+    FBLConfigureCellBlock configureCellBlock = ^(UITableViewCell *tableCell, id item) {
         Book *book = (Book *)item;
         tableCell.textLabel.text = book.title;
     };

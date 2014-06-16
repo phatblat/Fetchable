@@ -92,7 +92,7 @@
 		F89DC49818616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8B7C67118B5C71600A9365E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8B7C67418B5C82800A9365E /* FBLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLTableViewController.h; sourceTree = "<group>"; };
-		F8B7C67518B5C82800A9365E /* FBLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLTableViewController.m; sourceTree = "<group>"; };
+		F8B7C67518B5C82800A9365E /* FBLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FBLTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F8B7C67818B5C94600A9365E /* mogenerator.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = "<group>"; };
 		F8B7C68618B5CB8900A9365E /* Fetchable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fetchable.xcdatamodel; sourceTree = "<group>"; };
 		F8C5CCEB18B5C31E006CF7A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
