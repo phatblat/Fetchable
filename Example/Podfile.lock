@@ -5,12 +5,12 @@ PODS:
   - MagicalRecord/Core (2.2)
 
 DEPENDENCIES:
-  - Fetchable (from `../`)
+  - Fetchable (from `../Fetchable.podspec`)
   - MagicalRecord (~> 2.2)
 
 EXTERNAL SOURCES:
   Fetchable:
-    :path: ../
+    :path: ../Fetchable.podspec
 
 SPEC CHECKSUMS:
   Fetchable: 5bf635362f47ecbb1d8b291a929ed14240fc50b3
