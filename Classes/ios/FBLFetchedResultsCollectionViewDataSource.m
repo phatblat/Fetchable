@@ -52,9 +52,14 @@
 
 #pragma mark - UICollectionViewDataSource
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return [[self.frc sections] count];
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [[self.frc fetchedObjects] count];
+    return [[self.frc sections][section] numberOfObjects];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -70,7 +75,7 @@
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [[[[self.frc sections] objectAtIndex:indexPath.section] objects] objectAtIndex:indexPath.row];
+    return [self.frc objectAtIndexPath:indexPath];
 }
 
 - (NSIndexPath *)indexPathForItem:(id)item
