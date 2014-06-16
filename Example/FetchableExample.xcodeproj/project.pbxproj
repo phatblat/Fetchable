@@ -539,8 +539,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Support/FetchableExample-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Support/FetchableExample-Info.plist";
+				GCC_PREFIX_HEADER = "FetchableExample/Support/FetchableExample-Prefix.pch";
+				INFOPLIST_FILE = "FetchableExample/Support/FetchableExample-Info.plist";
 				PRODUCT_NAME = FetchableExample;
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,8 +553,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Support/FetchableExample-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Support/FetchableExample-Info.plist";
+				GCC_PREFIX_HEADER = "FetchableExample/Support/FetchableExample-Prefix.pch";
+				INFOPLIST_FILE = "FetchableExample/Support/FetchableExample-Info.plist";
 				PRODUCT_NAME = FetchableExample;
 				WRAPPER_EXTENSION = app;
 			};
