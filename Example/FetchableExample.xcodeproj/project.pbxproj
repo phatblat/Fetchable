@@ -405,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Fetchable/Support/Scripts/mogenerator.sh\"";
+			shellScript = "\"${SRCROOT}/${PROJECT_NAME}/Support/Scripts/mogenerator.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

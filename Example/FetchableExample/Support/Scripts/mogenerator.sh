@@ -27,8 +27,8 @@
 
 PATH=${PATH}:/usr/local/bin:/opt/boxen/homebrew/bin
 mogenerator \
-    --model "Fetchable/Model/Fetchable.xcdatamodeld/Fetchable.xcdatamodel" \
-    --human-dir "Fetchable/Model/Managed Objects/" \
-    --machine-dir "Fetchable/Model/Managed Objects/_Generated" \
+    --model "${PROJECT_NAME}/Model/Fetchable.xcdatamodeld/Fetchable.xcdatamodel" \
+    --human-dir "${PROJECT_NAME}/Model/Managed Objects/" \
+    --machine-dir "${PROJECT_NAME}/Model/Managed Objects/_Generated" \
     --template-var \
     arc=true
