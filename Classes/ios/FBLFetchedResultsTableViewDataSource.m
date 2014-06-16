@@ -59,7 +59,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[[self.frc sections] objectAtIndex:section] objects] count];
+    return [[self.frc sections][section] numberOfObjects];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -74,7 +74,12 @@
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [[[[self.frc sections] objectAtIndex:indexPath.section] objects] objectAtIndex:indexPath.row];
+    return [self.frc objectAtIndexPath:indexPath];
+}
+
+- (NSIndexPath *)indexPathForItem:(id)item
+{
+    return [self.frc indexPathForObject:item];
 }
 
 @end
