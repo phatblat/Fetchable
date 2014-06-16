@@ -1,6 +1,4 @@
 platform :ios, '6.0'
 
-#inhibit_all_warnings!
-
-pod 'Fetchable', :path => '../Fetchable.podspec'
+pod 'Fetchable', :path => '../'
 pod 'MagicalRecord', '~> 2.2'
