@@ -55,7 +55,7 @@ typedef void (^ConfigureCellBlock)(UICollectionViewCell *, id);
  */
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController *)frc
                                   cellIdentifier:(NSString *)cellIdentifier
-                              configureCellBlock:(ConfigureCellBlock)configureCellBlock;
+                              configureCellBlock:(ConfigureCellBlock)configureCellBlock __attribute__((objc_designated_initializer));
 
 #pragma mark - Convenience Methods
 

@@ -37,6 +37,8 @@
 
 @implementation FBLFetchedResultsTableViewDataSource
 
+#pragma mark - Designated Initializer
+
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController *)frc
                                   cellIdentifier:(NSString *)cellIdentifier
                               configureCellBlock:(ConfigureCellBlock)configureCellBlock

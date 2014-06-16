@@ -60,7 +60,7 @@ typedef void (^ConfigureCellBlock)(UITableViewCell *, id);
  */
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController *)frc
                                   cellIdentifier:(NSString *)cellIdentifier
-                              configureCellBlock:(ConfigureCellBlock)configureCellBlock;
+                              configureCellBlock:(ConfigureCellBlock)configureCellBlock __attribute__((objc_designated_initializer));
 
 #pragma mark - Convenience Methods
 
