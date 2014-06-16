@@ -1,5 +1,11 @@
 # Fetchable CHANGELOG
 
+## 0.9.2
+
+* Fixes in *DataSource protocol implementations
+* Nil out frc.delegate on dealloc
+* Renamed block typedef: ConfigureCellBlock -> FBLConfigureCellBlock
+
 ## 0.9.1
 
 * Replace @import with #import
