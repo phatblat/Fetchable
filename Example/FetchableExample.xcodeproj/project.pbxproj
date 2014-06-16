@@ -80,15 +80,15 @@
 		F8711D4018BCD9A9004797A4 /* Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Format.m; sourceTree = "<group>"; };
 		F8711D4118BCD9A9004797A4 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
 		F8711D4218BCD9A9004797A4 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
-		F89DC47218616BF400FEB151 /* Fetchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89DC47218616BF400FEB151 /* FetchableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89DC47518616BF400FEB151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F89DC47718616BF400FEB151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F89DC47918616BF400FEB151 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fetchable-Info.plist"; sourceTree = "<group>"; };
-		F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fetchable-Prefix.pch"; sourceTree = "<group>"; };
-		F89DC48D18616BF400FEB151 /* FetchableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89DC47D18616BF400FEB151 /* FetchableExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableExample-Info.plist"; sourceTree = "<group>"; };
+		F89DC48318616BF400FEB151 /* FetchableExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchableExample-Prefix.pch"; sourceTree = "<group>"; };
+		F89DC48D18616BF400FEB151 /* FetchableExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchableExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89DC48E18616BF400FEB151 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableTests-Info.plist"; sourceTree = "<group>"; };
+		F89DC49618616BF400FEB151 /* FetchableExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchableExampleTests-Info.plist"; sourceTree = "<group>"; };
 		F89DC49818616BF400FEB151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8B7C67118B5C71600A9365E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8B7C67418B5C82800A9365E /* FBLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLTableViewController.h; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		F89DC46918616BF400FEB151 = {
 			isa = PBXGroup;
 			children = (
-				F89DC47B18616BF400FEB151 /* Fetchable */,
+				F89DC47B18616BF400FEB151 /* FetchableExample */,
 				F89DC49418616BF400FEB151 /* Tests */,
 				F89DC47418616BF400FEB151 /* Frameworks */,
 				F89DC47318616BF400FEB151 /* Products */,
@@ -140,8 +140,8 @@
 		F89DC47318616BF400FEB151 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC47218616BF400FEB151 /* Fetchable.app */,
-				F89DC48D18616BF400FEB151 /* FetchableTests.xctest */,
+				F89DC47218616BF400FEB151 /* FetchableExample.app */,
+				F89DC48D18616BF400FEB151 /* FetchableExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F89DC47B18616BF400FEB151 /* Fetchable */ = {
+		F89DC47B18616BF400FEB151 /* FetchableExample */ = {
 			isa = PBXGroup;
 			children = (
 				F8C5CCED18B5C3E8006CF7A8 /* AppDelegate.h */,
@@ -168,14 +168,14 @@
 				F8C5CCF018B5C5B5006CF7A8 /* Resources */,
 				F89DC47C18616BF400FEB151 /* Support */,
 			);
-			path = Fetchable;
+			path = FetchableExample;
 			sourceTree = "<group>";
 		};
 		F89DC47C18616BF400FEB151 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC47D18616BF400FEB151 /* Fetchable-Info.plist */,
-				F89DC48318616BF400FEB151 /* Fetchable-Prefix.pch */,
+				F89DC47D18616BF400FEB151 /* FetchableExample-Info.plist */,
+				F89DC48318616BF400FEB151 /* FetchableExample-Prefix.pch */,
 				F8C5CCEB18B5C31E006CF7A8 /* main.m */,
 				F8B7C67718B5C92700A9365E /* Scripts */,
 			);
@@ -193,7 +193,7 @@
 		F89DC49518616BF400FEB151 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F89DC49618616BF400FEB151 /* FetchableTests-Info.plist */,
+				F89DC49618616BF400FEB151 /* FetchableExampleTests-Info.plist */,
 				F89DC49718616BF400FEB151 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -272,9 +272,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F89DC47118616BF400FEB151 /* Fetchable */ = {
+		F89DC47118616BF400FEB151 /* FetchableExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "Fetchable" */;
+			buildConfigurationList = F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableExample" */;
 			buildPhases = (
 				8291F1672F944086AF618C49 /* Check Pods Manifest.lock */,
 				F89DC46E18616BF400FEB151 /* Sources */,
@@ -286,14 +286,14 @@
 			);
 			dependencies = (
 			);
-			name = Fetchable;
+			name = FetchableExample;
 			productName = Fetchable;
-			productReference = F89DC47218616BF400FEB151 /* Fetchable.app */;
+			productReference = F89DC47218616BF400FEB151 /* FetchableExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F89DC48C18616BF400FEB151 /* FetchableTests */ = {
+		F89DC48C18616BF400FEB151 /* FetchableExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableTests" */;
+			buildConfigurationList = F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableExampleTests" */;
 			buildPhases = (
 				F89DC48918616BF400FEB151 /* Sources */,
 				F89DC48A18616BF400FEB151 /* Frameworks */,
@@ -304,9 +304,9 @@
 			dependencies = (
 				F89DC49318616BF400FEB151 /* PBXTargetDependency */,
 			);
-			name = FetchableTests;
+			name = FetchableExampleTests;
 			productName = FetchableTests;
-			productReference = F89DC48D18616BF400FEB151 /* FetchableTests.xctest */;
+			productReference = F89DC48D18616BF400FEB151 /* FetchableExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -323,7 +323,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "Fetchable" */;
+			buildConfigurationList = F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "FetchableExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -335,8 +335,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F89DC47118616BF400FEB151 /* Fetchable */,
-				F89DC48C18616BF400FEB151 /* FetchableTests */,
+				F89DC47118616BF400FEB151 /* FetchableExample */,
+				F89DC48C18616BF400FEB151 /* FetchableExampleTests */,
 				F8B7C67D18B5CA1C00A9365E /* Mogenerator */,
 			);
 		};
@@ -443,7 +443,7 @@
 /* Begin PBXTargetDependency section */
 		F89DC49318616BF400FEB151 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F89DC47118616BF400FEB151 /* Fetchable */;
+			target = F89DC47118616BF400FEB151 /* FetchableExample */;
 			targetProxy = F89DC49218616BF400FEB151 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -539,9 +539,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Support/Fetchable-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Fetchable/Support/FetchableExample-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Support/FetchableExample-Info.plist";
+				PRODUCT_NAME = FetchableExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -553,9 +553,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Fetchable/Support/Fetchable-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Fetchable/Support/FetchableExample-Prefix.pch";
+				INFOPLIST_FILE = "Fetchable/Support/FetchableExample-Info.plist";
+				PRODUCT_NAME = FetchableExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -575,8 +575,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tests/FetchableTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Tests/FetchableExampleTests-Info.plist";
+				PRODUCT_NAME = FetchableExampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -593,8 +593,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fetchable/Support/Fetchable-Prefix.pch";
-				INFOPLIST_FILE = "Tests/FetchableTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Tests/FetchableExampleTests-Info.plist";
+				PRODUCT_NAME = FetchableExampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -617,7 +617,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "Fetchable" */ = {
+		F89DC46D18616BF400FEB151 /* Build configuration list for PBXProject "FetchableExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F89DC49C18616BF400FEB151 /* Debug */,
@@ -626,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "Fetchable" */ = {
+		F89DC49E18616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F89DC49F18616BF400FEB151 /* Debug */,
@@ -635,7 +635,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableTests" */ = {
+		F89DC4A118616BF400FEB151 /* Build configuration list for PBXNativeTarget "FetchableExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F89DC4A218616BF400FEB151 /* Debug */,
