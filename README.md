@@ -5,11 +5,13 @@
 
 This is a small pod with a default implementation of the `NSFetchedResultsControllerDelegate` protocol. There is one for `UITableViewController` and one for `UICollectionViewController` as well. An FRC delegate implementation can be much more efficient at at updating these "list-o-things" views when compared to reloading the entire table (and triggering much larger redraws).
 
-This pod effectively eliminates the boilerplate code to connect an `NSFetchedResultsController` and pipe its updates into one of the aforementioned views. It goes one step further in extracting the DataSource protocol implementations into separate classes to make it easier to customize them by providing your own implementation.
+This pod effectively eliminates the boilerplate code to connect an `NSFetchedResultsController` and pipe its updates into one of the aforementioned view controllers. It goes one step further in extracting the DataSource protocol implementations into separate classes to make it easier for you to customize them by providing your own implementation.
 
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
+
+`pod try Fetchable` is a short way to do this, but still doesn't run `pod install` for you.
 
 ## Requirements
 
