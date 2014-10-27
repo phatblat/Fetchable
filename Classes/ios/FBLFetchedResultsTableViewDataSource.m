@@ -63,12 +63,17 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[self.frc sections] count];
+    return self.frc.sections.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[self.frc sections][section] numberOfObjects];
+    NSArray *sections = self.frc.sections;
+    if (!sections || !sections.count) {
+        return 0;
+    }
+
+    return [sections[section] numberOfObjects];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
