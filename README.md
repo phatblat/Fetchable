@@ -80,4 +80,5 @@ Ben Chatelain, benchatelain@gmail.com
 
 ## License
 
-Fetchable is available under the MIT license. See the LICENSE file for more info.
+Fetchable is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for rights and limitations.
+
